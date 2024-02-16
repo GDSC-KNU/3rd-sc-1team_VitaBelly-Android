@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'main_screen.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -8,6 +9,20 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   final TextEditingController _idController = TextEditingController();
   final TextEditingController _pwController = TextEditingController();
+
+  void _login() {
+    // 로그인 로직을 검증하는 코드
+    bool loginSuccess = true;
+
+    if (loginSuccess) {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => MainScreen()),
+      );
+    } else {
+      // 로그인 실패 시 처리
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -94,9 +109,7 @@ class _LoginPageState extends State<LoginPage> {
                     onPrimary: Colors.white,
                     padding: EdgeInsets.symmetric(horizontal: 100, vertical: 20),
                   ),
-                  onPressed: () {
-                    // login logic
-                  },
+                  onPressed: _login, // 버튼 클릭 시 _login 메서드 호출
                   child: Text('로그인'),
                 ),
               ],
