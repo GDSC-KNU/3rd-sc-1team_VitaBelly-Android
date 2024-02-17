@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'login_page.dart';
 import 'main_screen.dart';
 import 'pregnancy_info_screen.dart';
 import 'gynecology_clinic_location_screen.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await dotenv.load(fileName: ".env");
   runApp(VitaBellyApp());
 }
 
@@ -18,7 +22,8 @@ class VitaBellyApp extends StatelessWidget {
       ),
       // Register the routes
       routes: {
-        '/': (context) => MainScreen(),
+        '/': (context) => LoginPage(),
+        '/main': (context) => MainScreen(),
         '/pregnancyInfo': (context) => PregnancyInfoScreen(),
         '/gynecologyClinicLocation': (context) =>
             GynecologyClinicLocationScreen(),
