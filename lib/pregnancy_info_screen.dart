@@ -120,8 +120,8 @@ class MainScreenButton extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 20.0),
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-          backgroundColor: Colors.grey[200], // Button color
-          foregroundColor: Colors.black, // Text color
+          backgroundColor: Colors.grey[200],
+          foregroundColor: Colors.black,
           padding: EdgeInsets.zero,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(10.0),
@@ -134,9 +134,8 @@ class MainScreenButton extends StatelessWidget {
           children: [
             Image.asset(
               imagePath,
-              width: double
-                  .infinity, // Makes the image take up the full width of the button
-              fit: BoxFit.fitWidth, // Ensures the image scales correctly
+              width: double.infinity,
+              fit: BoxFit.fitWidth,
             ),
             Padding(
               padding: const EdgeInsets.all(16.0),

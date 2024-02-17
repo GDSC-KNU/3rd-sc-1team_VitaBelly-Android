@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'pregnancy_info_screen.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(MyApp());
 }
 
@@ -81,7 +81,7 @@ class MainScreen extends StatelessWidget {
                 text: '산부인과 위치 정보',
                 imagePath: 'assets/vitabelly_main_button2.png',
                 onPressed: () {
-                  // TODO: Navigate to the gynecology clinic location screen
+                  Navigator.pushNamed(context, '/gynecologyClinicLocation');
                 },
                 icon: Icons.location_on,
               ),
