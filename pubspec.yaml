@@ -57,6 +57,9 @@ flutter:
     - assets/vitabelly_main_button1.png
     - assets/vitabelly_main_button2.png
     - assets/vitabelly_main_button3.png
+    - assets/vitabelly_pregnant_button1.png
+    - assets/vitabelly_pregnant_button2.png
+    - assets/vitabelly_pregnant_button3.png
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.

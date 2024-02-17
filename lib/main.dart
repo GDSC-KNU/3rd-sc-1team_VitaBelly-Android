@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'login_page.dart';
+import 'main_screen.dart';
+import 'pregnancy_info_screen.dart';
 
 void main() {
   runApp(VitaBellyApp());
@@ -7,13 +8,18 @@ void main() {
 
 class VitaBellyApp extends StatelessWidget {
   @override
-Widget build(BuildContext context) {
+  Widget build(BuildContext context) {
     return MaterialApp(
       title: 'VitaBelly',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: LoginPage(),
+      // Register the routes
+      routes: {
+        '/': (context) => MainScreen(),
+        '/pregnancyInfo': (context) => PregnancyInfoScreen(),
+      },
     );
   }
 }

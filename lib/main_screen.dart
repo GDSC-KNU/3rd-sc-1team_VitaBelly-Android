@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'pregnancy_info_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -72,7 +73,7 @@ class MainScreen extends StatelessWidget {
                 text: '임신 관련 정보',
                 imagePath: 'assets/vitabelly_main_button1.png',
                 onPressed: () {
-                  // TODO: Navigate to the pregnancy information screen
+                  Navigator.pushNamed(context, '/pregnancyInfo');
                 },
                 icon: Icons.pregnant_woman,
               ),
