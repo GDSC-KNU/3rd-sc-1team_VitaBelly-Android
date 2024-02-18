@@ -134,7 +134,11 @@ class MainScreenButton extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Image.asset(imagePath, height: 200.0),
+            Image.asset(
+              imagePath,
+              width: double.infinity,
+              fit: BoxFit.fitWidth,
+            ),
             Padding(
               padding: EdgeInsets.all(16.0),
               child: Text(

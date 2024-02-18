@@ -83,7 +83,7 @@ class PregnancyInfoScreen extends StatelessWidget {
               MainScreenButton(
                 text: '임신 중 자기 관리',
                 onPressed: () {
-                  // TODO: Navigate to the pregnancy self-care page
+                  Navigator.pushNamed(context, '/selfCare');
                 },
                 imagePath: 'assets/vitabelly_pregnant_button2.png',
               ),
