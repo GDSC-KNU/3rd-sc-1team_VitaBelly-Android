@@ -76,7 +76,7 @@ class PregnancyInfoScreen extends StatelessWidget {
               MainScreenButton(
                 text: '임신 필수 검사 일정',
                 onPressed: () {
-                  // TODO: Navigate to the essential pregnancy test schedule page
+                  Navigator.pushNamed(context, '/pregnancyTestSchedule');
                 },
                 imagePath: 'assets/vitabelly_pregnant_button1.png',
               ),
