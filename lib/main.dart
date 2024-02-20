@@ -5,6 +5,7 @@ import 'main_screen.dart';
 import 'pregnancy_info_screen.dart';
 import 'gynecology_clinic_location_screen.dart';
 import 'pregnancy_selfcare_screen.dart';
+import 'housekeeping_services_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -29,6 +30,7 @@ class VitaBellyApp extends StatelessWidget {
         '/gynecologyClinicLocation': (context) =>
             GynecologyClinicLocationScreen(),
         '/selfCare': (context) => PregnancySelfCareScreen(),
+        '/houseKeepingServices': (context) => HousekeepingServicesScreen(),
       },
     );
   }

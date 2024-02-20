@@ -35,6 +35,7 @@ dependencies:
   google_maps_webservice: ^0.0.19
   location: ^5.0.3
   flutter_dotenv: ^5.0.2
+  intl: ^0.19.0
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -65,6 +66,9 @@ flutter:
     - assets/vitabelly_pregnant_button1.png
     - assets/vitabelly_pregnant_button2.png
     - assets/vitabelly_pregnant_button3.png
+    - assets/vitabelly_housekeeper1.png
+    - assets/vitabelly_housekeeper2.png
+    - assets/vitabelly_housekeeper3.png
     - .env
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

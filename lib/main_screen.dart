@@ -89,7 +89,7 @@ class MainScreen extends StatelessWidget {
                 text: '가사 도우미 서비스',
                 imagePath: 'assets/vitabelly_main_button3.png',
                 onPressed: () {
-                  // TODO: Navigate to the housekeeping services screen
+                  Navigator.pushNamed(context, '/houseKeepingServices');
                 },
                 icon: Icons.cleaning_services,
               ),
