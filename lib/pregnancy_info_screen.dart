@@ -90,7 +90,7 @@ class PregnancyInfoScreen extends StatelessWidget {
               MainScreenButton(
                 text: '임신 중 금기 의약품',
                 onPressed: () {
-                  // TODO: Navigate to the contraindicated medications during pregnancy page
+                  Navigator.pushNamed(context, '/medicineList');
                 },
                 imagePath: 'assets/vitabelly_pregnant_button3.png',
               ),

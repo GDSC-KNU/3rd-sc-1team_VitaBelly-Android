@@ -69,6 +69,7 @@ flutter:
     - assets/vitabelly_housekeeper1.png
     - assets/vitabelly_housekeeper2.png
     - assets/vitabelly_housekeeper3.png
+    - assets/vitabelly_medicine_list_data.json
     - .env
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

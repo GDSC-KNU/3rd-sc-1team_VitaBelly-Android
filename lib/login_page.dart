@@ -90,14 +90,16 @@ class _LoginPageState extends State<LoginPage> {
                         onPressed: () {
                           // password recovery
                         },
-                        child: Text('비밀번호 찾기', style: TextStyle(color: accentColor)),
+                        child: Text('비밀번호 찾기',
+                            style: TextStyle(color: accentColor)),
                       ),
                       SizedBox(width: 20),
                       TextButton(
                         onPressed: () {
                           // sign up
                         },
-                        child: Text('회원가입', style: TextStyle(color: accentColor)),
+                        child:
+                            Text('회원가입', style: TextStyle(color: accentColor)),
                       ),
                     ],
                   ),
@@ -105,9 +107,10 @@ class _LoginPageState extends State<LoginPage> {
                 SizedBox(height: 20),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    primary: accentColor,
-                    onPrimary: Colors.white,
-                    padding: EdgeInsets.symmetric(horizontal: 100, vertical: 20),
+                    backgroundColor: accentColor,
+                    foregroundColor: Colors.white,
+                    padding:
+                        EdgeInsets.symmetric(horizontal: 100, vertical: 20),
                   ),
                   onPressed: _login, // 버튼 클릭 시 _login 메서드 호출
                   child: Text('로그인'),
